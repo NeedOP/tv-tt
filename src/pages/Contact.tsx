@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div className="contact-container">
       <h2>Kontakta Oss</h2>
-      <p>Vi finns här för att hjälpa dig. Välj något av alternativen nedan:</p>
+      <p>Vi finns här för att hjälpa dig! Välj något av alternativen nedan:</p>
 
       <div className="contact-grid">
         <a href="https://instagram.com" target="_blank" className="contact-card">
