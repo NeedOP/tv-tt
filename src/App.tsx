@@ -1,22 +1,26 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Pricing from "./pages/Pricing";
-import Contact from "./pages/Contact";
-import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
+import Pricing from './pages/Pricing';
+import Contact from './pages/Contact';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import './App.css';
 
 function App() {
   return (
     <Router>
-      <Navbar />
-      <div className="main-content">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/om" element={<About />} />
-          <Route path="/pris" element={<Pricing />} />
-          <Route path="/kontakt" element={<Contact />} />
-        </Routes>
+      <div className="app-container">
+        <Navbar />
+        <main className="main-content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/om" element={<About />} />
+            <Route path="/priser" element={<Pricing />} />
+            <Route path="/kontakt" element={<Contact />} />
+          </Routes>
+        </main>
+        <Footer />
       </div>
     </Router>
   );

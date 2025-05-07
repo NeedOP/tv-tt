@@ -1,0 +1,30 @@
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .about-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #004080;
+  }
+  
+  .about-content {
+    line-height: 1.6;
+  }
+  
+  .about-content p {
+    margin-bottom: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .about-container {
+      padding: 40px;
+    }
+    
+    .about-title {
+      font-size: 2.2rem;
+    }
+  }
