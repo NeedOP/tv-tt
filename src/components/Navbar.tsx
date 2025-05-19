@@ -8,7 +8,14 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="nav-container">
-        <Link to="/" className="logo">Tvättfirman</Link>
+        <Link to="/" className="logo">
+          {/* Proper image implementation */}
+          <img 
+            src="/icon.jpg" 
+            alt="Tvättfirman logo" 
+            className="logo-image"
+          />
+        </Link>
         
         <button
           className="menu-toggle"
@@ -24,9 +31,6 @@ const Navbar = () => {
           </li>
           <li>
             <Link to="/om" onClick={() => setIsOpen(false)}>Om oss</Link>
-          </li>
-          <li>
-            <Link to="/priser" onClick={() => setIsOpen(false)}>Priser</Link>
           </li>
           <li>
             <Link to="/kontakt" onClick={() => setIsOpen(false)}>Kontakt</Link>

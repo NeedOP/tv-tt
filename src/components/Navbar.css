@@ -18,10 +18,20 @@
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: white;
-  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: 60px; /* Fixed height for logo container */
+}
+
+.logo-image {
+  height: 100%;
+  width: auto;
+  max-width: 150px;
+  transition: opacity 0.3s ease;
+}
+
+.logo-image:hover {
+  opacity: 0.8;
 }
 
 .nav-links {
@@ -29,10 +39,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-.nav-links li {
-  margin-left: 1.5rem;
+  gap: 1.5rem; /* Better than margin-left on li */
 }
 
 .nav-links a {
@@ -41,10 +48,27 @@
   font-weight: 500;
   padding: 0.5rem 0;
   position: relative;
+  transition: opacity 0.3s ease;
 }
 
 .nav-links a:hover {
   opacity: 0.8;
+}
+
+/* Underline animation for links */
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
 }
 
 .menu-toggle {
@@ -54,15 +78,21 @@
   color: white;
   font-size: 1.5rem;
   cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1001;
 }
 
 @media (max-width: 768px) {
+  .nav-container {
+    padding: 0.8rem;
+  }
+  
   .menu-toggle {
     display: block;
   }
 
   .nav-links {
-    position: absolute;
+    position: fixed;
     top: 60px;
     left: 0;
     right: 0;
@@ -72,6 +102,7 @@
     padding: 1rem 0;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     transition: clip-path 0.4s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   }
 
   .nav-links.active {
@@ -79,6 +110,17 @@
   }
 
   .nav-links li {
-    margin: 0.5rem 0;
+    margin: 0.75rem 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links a {
+    padding: 0.5rem 1rem;
+    display: block;
+  }
+
+  .nav-links a::after {
+    display: none; /* Disable underline animation on mobile */
   }
 }
