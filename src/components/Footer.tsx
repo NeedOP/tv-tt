@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
           </a>
         </div>
 
-        <p>&copy; {new Date().getFullYear()} Tvättfirman. Alla rättigheter förbehållna.</p>
+        <p>&copy; {new Date().getFullYear()} Bubblan. Alla rättigheter förbehållna.</p>
         
         <div 
           className="map-preview" 

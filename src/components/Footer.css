@@ -1,5 +1,5 @@
 .footer {
-  background-color: #053939;
+  background-color: #297f9b; /* Light blue */
   color: white;
   padding: 1.5rem 0;
   margin-top: auto;
@@ -57,20 +57,6 @@
   opacity: 0.8;
 }
 
-@media (max-width: 768px) {
-  .footer {
-    padding: 1rem 0;
-  }
-  
-  .map-preview {
-    width: 250px;
-    height: 125px;
-  }
-  
-  .footer-hours {
-    font-size: 0.8rem;
-  }
-
 .footer-contact {
   display: flex;
   justify-content: center;
@@ -96,6 +82,19 @@
 }
 
 @media (max-width: 768px) {
+  .footer {
+    padding: 1rem 0;
+  }
+  
+  .map-preview {
+    width: 250px;
+    height: 125px;
+  }
+  
+  .footer-hours {
+    font-size: 0.8rem;
+  }
+
   .footer-contact {
     gap: 1rem;
   }
@@ -104,5 +103,4 @@
     width: 20px;
     height: 20px;
   }
-}
 }

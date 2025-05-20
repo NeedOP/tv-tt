@@ -1,6 +1,6 @@
 .navbar {
-  background-color: #004080;
-  color: white;
+  background-color: rgba(250,247,240,255);
+  color: black;
   position: fixed;
   top: 0;
   width: 100%;
@@ -20,7 +20,7 @@
 .logo {
   display: flex;
   align-items: center;
-  height: 60px; /* Fixed height for logo container */
+  height: 60px;
 }
 
 .logo-image {
@@ -39,11 +39,11 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 1.5rem; /* Better than margin-left on li */
+  gap: 1.5rem;
 }
 
 .nav-links a {
-  color: white;
+  color: black;
   text-decoration: none;
   font-weight: 500;
   padding: 0.5rem 0;
@@ -55,7 +55,6 @@
   opacity: 0.8;
 }
 
-/* Underline animation for links */
 .nav-links a::after {
   content: '';
   position: absolute;
@@ -63,7 +62,7 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: white;
+  background-color: black;
   transition: width 0.3s ease;
 }
 
@@ -75,7 +74,7 @@
   display: none;
   background: none;
   border: none;
-  color: white;
+  color: black;
   font-size: 1.5rem;
   cursor: pointer;
   padding: 0.5rem;
@@ -96,7 +95,7 @@
     top: 60px;
     left: 0;
     right: 0;
-    background-color: #004080;
+    background-color: rgba(250,247,240,255);
     flex-direction: column;
     align-items: center;
     padding: 1rem 0;
@@ -121,6 +120,6 @@
   }
 
   .nav-links a::after {
-    display: none; /* Disable underline animation on mobile */
+    display: none;
   }
 }
