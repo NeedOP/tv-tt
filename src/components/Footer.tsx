@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
         
-        <p className="footer-hours">Öppettider: Mån-Fre 08:00-18:00, Lör 10:00-15:00</p>
+        <p className="footer-hours">Öppettider: Mån-Fre 07:00-19:00, Lör 09:00-14:00, Sön STÄNGD</p>
       </div>
     </footer>
   );
