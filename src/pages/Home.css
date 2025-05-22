@@ -187,8 +187,8 @@ html, body {
 .industries-grid {
   display: grid;
   gap: 20px;
-  justify-items: stretch; /* Stretch each card to equal width */
-  align-items: stretch;    /* Stretch each card to equal height */
+  justify-items: stretch;
+  align-items: stretch;
   margin: 0 auto;
   max-width: 1200px;
   padding: 0 20px;
@@ -205,7 +205,7 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 160px; /* You can tweak this */
+  height: 160px;
   min-height: 140px;
 }
 
@@ -237,7 +237,7 @@ html, body {
   }
 }
 
-/* Mobile Optimizations */
+/* Mobile Optimizations - Service Section Changes */
 @media (max-width: 768px) {
   .hero-banner {
     height: 350px;
@@ -251,6 +251,29 @@ html, body {
   .hero-nav-button {
     padding: 12px;
     font-size: 1.3rem;
+  }
+
+  /* Service card mobile changes */
+  .service-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .service-text {
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .service-image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .service-card.reverse {
+    flex-direction: column;
   }
 }
 
@@ -276,5 +299,14 @@ html, body {
 
   .home-text {
     font-size: 1.1rem;
+  }
+
+  /* Additional small phone adjustments for service section */
+  .service-text h3 {
+    font-size: 1.3rem;
+  }
+
+  .service-text p {
+    font-size: 1rem;
   }
 }

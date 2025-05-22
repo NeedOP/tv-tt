@@ -29,8 +29,7 @@ const Home = () => {
     { name: "Tjänsteföretag", icon: "👔" },
     { name: "Gym", icon: "💪" },
     { name: "Offentlig Sektor", icon: "🏛️" },
-    { name: "Underhållningslokaler", icon: "🎭" },
-    { name: "Detaljhandel", icon: "🛍️" },
+    { name: "lokaler", icon: "🎭" },
     { name: "Industri", icon: "🏭" }
   ];
 
