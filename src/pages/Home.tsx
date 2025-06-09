@@ -26,7 +26,7 @@ const Home = () => {
     { name: "Vård & Omsorg", icon: "🏥" },
     { name: "Kök & Restaurang", icon: "🍽️" },
     { name: "Hotell", icon: "🏨" },
-    { name: "Tjänsteföretag", icon: "👔" },
+    { name: "Arbetskläder", icon: "👔" },
     { name: "Gym", icon: "💪" },
     { name: "Offentlig Sektor", icon: "🏛️" },
     { name: "lokaler", icon: "🎭" },
