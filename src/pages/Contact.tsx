@@ -38,8 +38,8 @@ const Contact = () => {
     },
     {
       platform: "Email",
-      handle: "info@tvatt.se",
-      url: "mailto:info@tvatt.se",
+      handle: "info@bubblantvatteri.se",
+      url: "mailto:info@bubblantvatteri.se",
       icon: "https://cdn-icons-png.flaticon.com/512/732/732200.png",
     },
     {
