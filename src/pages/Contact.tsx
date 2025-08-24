@@ -66,7 +66,7 @@ const Contact = () => {
 
     try {
       const response = await emailjs.send(
-        'service_fp589ji',          // Your Service ID
+        'service_mxtl6me',          // Your Service ID
         'template_wnffwwa',         // Your Template ID
         formData,                   // Now properly typed
         'egQPKxrCs1OSQAZuI'         // Your Public Key
