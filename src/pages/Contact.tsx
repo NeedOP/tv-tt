@@ -26,13 +26,13 @@ const Contact = () => {
   const contactMethods = [
     {
       platform: "Instagram",
-      handle: "@tvattforetag",
+      handle: "Kommer Snart",
       url: "https://instagram.com/tvattforetag",
       icon: "https://cdn-icons-png.flaticon.com/512/174/174855.png",
     },
     {
       platform: "Facebook",
-      handle: "Tvätt Företag",
+      handle: "Kommer Snart",
       url: "https://facebook.com/tvattforetag",
       icon: "https://cdn-icons-png.flaticon.com/512/733/733547.png",
     },
