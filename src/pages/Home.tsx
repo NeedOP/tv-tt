@@ -23,11 +23,9 @@ const Home = () => {
   ];
 
   const industries = [
-    { name: "Vård & Omsorg", icon: "🏥" },
     { name: "Kök & Restaurang", icon: "🍽️" },
     { name: "Hotell", icon: "🏨" },
     { name: "Arbetskläder", icon: "👔" },
-    { name: "Gym", icon: "💪" },
     { name: "Offentlig Sektor", icon: "🏛️" },
     { name: "lokaler", icon: "🎭" },
     { name: "Industri", icon: "🏭" }
